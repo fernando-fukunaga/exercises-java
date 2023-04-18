@@ -10,32 +10,28 @@ public class Arena {
     }
 
     public void realizaCombate(Gladiador glad1, Arma arma1, Gladiador glad2, Arma arma2) {
-        int vida1 = glad1.getVidas();
-        int vida2 = glad2.getVidas();
-        int dano1 = arma1.getDano();
-        int dano2 = arma2.getDano();
+        System.out.println("\nRealizando combate...");
+        glad1.recebeGolpe(arma2);
+        glad2.recebeGolpe(arma1);
 
-        int resultado1 = vida1 - dano2;
-        int resultado2 = vida2 - dano1;
-
-        if (resultado1 == 0 || resultado2 == 0) {
-            this.estaoFelizes = true;
-            this.torcedores = this.torcedores + (10 / 100 * this.torcedores);
+        if (glad1.getVidas() <= 0 || glad2.getVidas() <= 0) {
+            estaoFelizes = true;
+            int aumento = 10 / 100 * torcedores;
+            torcedores = torcedores + aumento;
         }
-        else {
-            this.estaoFelizes = false;
-            this.torcedores = this.torcedores - (25 / 100 * this.torcedores);
+        else if (glad1.getVidas() > 0 && glad2.getVidas() > 0) {
+            estaoFelizes = false;
+            int decrescimo = 25 / 100 * torcedores;
+            torcedores = torcedores - decrescimo;
         }
     }
 
     public void imprime() {
-        if (this.estaoFelizes == true) {
-            System.out.println("Os torcedores ficaram felizes pois um ou mais dos gladiadores morreram.\nQuantidade de torcedores agora: " + this.torcedores);
+        if (estaoFelizes == true) {
+            System.out.println("\nOs torcedores ficaram felizes pois um ou mais dos gladiadores morreram.\nQuantidade de torcedores agora: " + torcedores);
         }
         else {
-            System.out.println("Os torcedores ficaram tristes pois os dois continuam vivos.\nQuantidade de torcedores agora: " + this.torcedores);
-
+            System.out.println("\nOs torcedores ficaram tristes pois os dois continuam vivos.\nQuantidade de torcedores agora: " + torcedores);
         }
-        
     }
 }
