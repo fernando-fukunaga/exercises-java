@@ -1,3 +1,5 @@
+package SingleFilePrograms;
+
 import javax.swing.JOptionPane;
 public class Pares0a100comDo {
     public static void main(String[] args) {

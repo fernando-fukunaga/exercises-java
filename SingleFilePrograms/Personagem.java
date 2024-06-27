@@ -1,3 +1,5 @@
+package SingleFilePrograms;
+
 public class Personagem {
     String nome;
     int energia = 10;

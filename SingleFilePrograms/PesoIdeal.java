@@ -1,4 +1,4 @@
-/*Tendo como entrada a altura e o sexo de uma pessoa, 
+package SingleFilePrograms;/*Tendo como entrada a altura e o sexo de uma pessoa,
 construa um programa que exibe o peso ideal para ela, em quilos. 
 Use as seguintes fórmulas (adote ℎ como a altura e em metros):
 • Homens: 72,7 × ℎ − 58

@@ -1,3 +1,5 @@
+package SingleFilePrograms;
+
 import java.util.Scanner;
 public class Fibonacci {
     static long fibo(int n) {

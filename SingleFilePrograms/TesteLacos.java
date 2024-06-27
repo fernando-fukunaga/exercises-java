@@ -1,3 +1,5 @@
+package SingleFilePrograms;
+
 public class TesteLacos {
     //exibir o comportamento dos laços
     public static void main(String[] args) {

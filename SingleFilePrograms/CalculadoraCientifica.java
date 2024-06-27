@@ -1,3 +1,4 @@
+package SingleFilePrograms;
 //compilar: javac arquivo.java
 //excecutar: java nomedaclasse
 import javax.swing.JOptionPane;

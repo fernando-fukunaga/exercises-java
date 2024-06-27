@@ -1,4 +1,4 @@
-/*Faça um programa que recebe duas notas, 
+package SingleFilePrograms;/*Faça um programa que recebe duas notas,
 exibe a média aritmética das notas e uma mensagem indicando 
 se o aluno foi aprovado ou reprovado. A média para aprovação deve ser maior que seis.*/
 import javax.swing.JOptionPane;

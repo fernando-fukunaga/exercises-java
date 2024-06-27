@@ -1,3 +1,5 @@
+package SingleFilePrograms;
+
 import java.util.Scanner;
 public class MaiorValor {
     public static void main(String []args) {

@@ -1,3 +1,5 @@
+package SingleFilePrograms;
+
 import javax.swing.JOptionPane;
 
 public class PosNegParImp {
